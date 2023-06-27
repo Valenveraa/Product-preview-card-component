@@ -14,14 +14,17 @@
 
 body {
     background-color: var(--cream);
-    min-height: 100vh;
+}
+
+.main {
     margin: 1.875rem auto;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main {
+.main__container {
     background-color: var(--white);
     width: 21.563rem;
     height: 38.125rem;
@@ -102,12 +105,21 @@ body {
     margin-right: 0.625rem;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
 @media (min-width: 768px) {
     body {
         margin: 0 0 0 0;
     }
 
-    .main {
+    .main__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 31.25rem;
